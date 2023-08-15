@@ -1,0 +1,5 @@
+FROM centos:centos7
+LABEL description="/clusterrouter"
+
+COPY ./bin/clusterrouter clusterrouter
+ENTRYPOINT ["/clusterrouter"]
